@@ -1,1 +1,11 @@
+name: linting-python-code
 
+on: push
+
+jobs:
+  python-linting-code:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: github/super-linter@v4.9.4
+      - name: Super-Linter
+        run: echo "this workflow run successfully for this particular action"
